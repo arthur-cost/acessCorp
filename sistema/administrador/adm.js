@@ -46,7 +46,6 @@ document.addEventListener('DOMContentLoaded', () => {
         phoneNumber = phoneNumber.replace(/(\d{4})(\d)/, '$1-$2'); // Add hyphen after the first 4 digits
         return phoneNumber;
     }
-
     // Event listeners for formatting
     cpfInput.addEventListener('input', function () {
         this.value = formatCPF(this.value);
